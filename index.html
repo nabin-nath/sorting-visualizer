@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="" type="image/x-icon">
+  <title>Sorting Visualizer</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="sorting.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Sorting Visualizer</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="btn btn-outline-secondary" type="submit" id="newArray">New array</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-secondary" type="submit" id="bubbleSort">Bubble sort</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-secondary" type="submit" id="selectionSort">Selection sort</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-secondary" type="submit" id="insertionSort">Insertion sort</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-secondary" type="submit" id="quickSort">Quick sort</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-secondary" type="submit" id="mergeSort">Merge sort</button>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="https://github.com/nabin-nath/sorting-visualizer" class="link-black" target="_blank"><i class="fab fa-github" style="font-size:xx-large;"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="slider">
+    <h2 class="text-light">Speed</h2>
+    <span id="speed">
+      <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+    </span>
+  </div>
+
+  <div id="bars" class="flex-container"></div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="js/sorting.js"></script>
+  <script src="js/bubble.js"></script>
+  <script src="js/insertion.js"></script>
+  <script src="js/merge.js"></script>
+  <script src="js/quick.js"></script>
+  <script src="js/selection.js"></script>
+</body>
+
+</html>
