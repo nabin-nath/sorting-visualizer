@@ -42,9 +42,9 @@ body{
 
 .link-black{
     text-decoration: none;
-    color: #212529;
+    color:white;
 }
 
 .link-black:hover{
-    color: darkslategrey;
+    color: bisque;
 }
